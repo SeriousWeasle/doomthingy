@@ -1,0 +1,7 @@
+Class WS_TestAmmo : Shell
+{
+	Default
+	{
+		Inventory.Amount 5;
+	}
+}

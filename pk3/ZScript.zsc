@@ -1,0 +1,5 @@
+//Main file for this mod
+version "3.2.5"
+
+//Experimental items
+#include "zscript/weasle/exp/testitem.zsc"
