@@ -1,0 +1,7 @@
+Sprite VSTGA0, 62, 34
+{
+	Offset 31, 17
+	XScale 2
+	YScale 2
+	Patch VSTGA0, 0, 0
+}

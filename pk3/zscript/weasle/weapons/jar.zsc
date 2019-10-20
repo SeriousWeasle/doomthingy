@@ -1,0 +1,53 @@
+//This is cursed on so many levels. What has brought me to this point and why am I making this into a doom mod
+
+Class TheJar : Weapon
+{
+	Default
+	{
+		Weapon.SlotNumber 5;
+		
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 4;
+		Weapon.AmmoType "jarAmmo";
+		
+		Inventory.PickupMessage "$WS_GOTJAR";
+	}
+	
+	States
+	{
+		Ready:
+			WJAR A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			WJAR A 1 A_Lower;
+			Loop;
+		Select:
+			WJAR A 1 A_Raise;
+			Loop;
+		Fire:
+			WJAR A 5;
+			WJAR B 3;
+			WJAR C 2;
+			WJAR D 1 A_SpawnItemEX("jarProjectile" , 0, 0, 30, 0, 0, 0);
+			WJAR A 5 A_ReFire;
+			Goto Ready;
+		Spawn:
+			WJAR W -1;
+			Stop;
+	}
+}
+
+Class JarProjectile : Actor
+{
+	Default
+	{
+	
+	}
+	
+	States
+	{
+		Spawn:
+			PJAR ABC 3;
+			Loop;
+	}
+}

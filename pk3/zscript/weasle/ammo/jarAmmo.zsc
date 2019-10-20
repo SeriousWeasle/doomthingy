@@ -1,0 +1,8 @@
+Class jarAmmo : RocketAmmo
+{
+	Default
+	{
+		Inventory.Amount 1;
+		Inventory.MaxAmount 25;
+	}
+}

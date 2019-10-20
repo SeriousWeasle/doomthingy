@@ -1,0 +1,19 @@
+//Gray pony T-Shirt, similar to green armor
+Class GrayArmor : BasicArmorPickup replaces GreenArmor
+{
+	Default
+	{
+		Armor.SaveAmount 100;
+		Armor.SavePercent 30;
+		
+		Inventory.Icon "VSTGA0";
+		Inventory.PickupMessage "$WS_GOTGRAYVEST";
+	}
+	
+	States
+	{
+		Spawn:
+			VSTG A -1;
+			Stop;
+	}
+}
