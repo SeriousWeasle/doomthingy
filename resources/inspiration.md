@@ -6,4 +6,5 @@ If some of your work is in here and you want it gone, submit it to the issue tra
 
 # Credits
 ./inspiration/EG3vmVBX4AE4dnK.jpg   Jargon Scott [Twitter: @Jargon_Scott]
+
 ./inspiration/EHFyhwHXYAclNOn.jpg   Jargon Scott [Twitter: @Jargon_Scott]
