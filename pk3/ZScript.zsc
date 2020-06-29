@@ -1,8 +1,0 @@
-//Main file for this mod
-version "3.2.5"
-
-//Armors
-#include "zscript/weasle/armor/MediumVest.zsc"
-
-//Experimental items
-#include "zscript/weasle/exp/testitem.zsc"
